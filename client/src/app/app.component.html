@@ -1,0 +1,9 @@
+<div class="main-container">
+  <h1>{{title}}</h1>
+  <div class="filter-container">
+    <app-brand-list (newBrandSelected)="setBrandId($event)"></app-brand-list>
+    <app-country-list (newCountrySelected)="setCountryIso($event)"></app-country-list>
+    <app-game-category-list (newGameCategorySelected)="setCategoryId($event)"></app-game-category-list>
+  </div>
+  <app-game-list [brandId]="brandId" [countryIso]="countryIso" [categoryId]="categoryId"></app-game-list>
+</div>

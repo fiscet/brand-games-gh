@@ -1,0 +1,43 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+.card {
+    width: 315px;
+    margin: 5px;
+
+    @media screen and (min-width: 600px) {
+        width: 400px;
+    }
+
+    @media screen and (min-width: 960px) {
+        width: 350px;
+    }
+}
+
+.title {
+    width: 368px;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (min-width: 960px) {
+        width: 318px;
+    }
+
+    .hot {
+        color: rgb(201, 11, 11);
+        margin-left: 5px;
+    }
+
+    .new {
+        color: rgb(3, 89, 3);
+        margin-left: 5px;
+    }
+}
+
+.image-wrapper {
+    text-align: center;
+    margin-top: 20px;
+
+    img {
+        max-width: 160px;
+    }
+}

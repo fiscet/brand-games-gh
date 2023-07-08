@@ -1,0 +1,24 @@
+<mat-card class="card">
+    <mat-card-header class="header">
+        <mat-card-title class="title">
+            <span>{{game_name}}</span>
+            <div>
+                <i class="bi bi-fire hot" *ngIf="hot == true" matTooltip="This game is HOT"
+                    [matTooltipPosition]="'above'"></i>
+                <i class="bi bi-sun new" *ngIf="new == true" matTooltip="This game is NEW"
+                    [matTooltipPosition]="'above'"></i>
+            </div>
+        </mat-card-title>
+        <mat-card-subtitle>{{game_category}}</mat-card-subtitle>
+    </mat-card-header>
+    <div class="image-wrapper" matTooltip="Click me to see my Launchcode" [matTooltipPosition]="'above'" (click)="showCode()">
+        <img mat-card-image [src]="imageUrl" alt="Logo of {{game_name}}">
+    </div>
+    <mat-card-content>
+        <ul>
+            <li><b>Brand</b> {{brand}}</li>
+            <li><b>Provider</b> {{game_provider}}</li>
+            <li><b>RTP</b> {{rtp}}</li>
+        </ul>
+    </mat-card-content>
+</mat-card>

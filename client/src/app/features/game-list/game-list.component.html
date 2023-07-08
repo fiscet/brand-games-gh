@@ -1,0 +1,6 @@
+<div class="list-container">
+    <app-game-card *ngFor="let game of games" [launchcode]="game.launchcode" [game_name]="game.game_name"
+        [brand]="game.brand" [game_category]="game.game_category" [game_provider]="game.game_provider" [hot]="game.hot"
+        [new]="game.new" [rtp]="game.rtp"></app-game-card>
+
+</div>

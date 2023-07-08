@@ -1,0 +1,6 @@
+<mat-form-field>
+    <mat-label>Choose a country</mat-label>
+    <mat-select [value]="selected" (selectionChange)="onCountryChange($event)">
+        <mat-option *ngFor="let country of countries" [value]="country.iso">{{country.country}}</mat-option>
+    </mat-select>
+</mat-form-field>

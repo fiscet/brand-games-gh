@@ -1,0 +1,7 @@
+<mat-form-field style="min-width: 300px;">
+    <mat-label>Filter by category (optional)</mat-label>
+    <mat-select [value]="selected" (selectionChange)="onGameCategoryChange($event)">
+        <mat-option value="-1">-- No category -- </mat-option>
+        <mat-option *ngFor="let category of gameCategories" [value]="category.id">{{category.name}}</mat-option>
+    </mat-select>
+</mat-form-field>
