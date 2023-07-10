@@ -1,5 +1,11 @@
 # Brand Games Server
 
+## Config notes
+
+- DB credential are stored in app/Config/Database.php
+- I setup a rate limiter of 1 request per second
+- I've created some db feeders in app/Database/Seeds/
+
 ## Server Requirements
 
 PHP version 7.4 or higher is required, with the following extensions installed:
@@ -12,11 +18,3 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 - json (enabled by default - don't turn it off)
 - [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
 - [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
-
-MySql 5.X
-
-## Config notes
-
-- DB credential are stored in app/Config/Database.php
-- I setup a rate limiter of 1 request per second
-- I've created some db feeders in app/Database/Seeds/
