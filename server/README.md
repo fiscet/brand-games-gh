@@ -5,6 +5,8 @@
 - DB credential are stored in app/Config/Database.php
 - I setup a rate limiter of 1 request per second
 - I've created some db feeders in app/Database/Seeds/
+- First installation, run `composer update`
+- To start the server locally run `php spark serve`
 
 ## Server Requirements
 
